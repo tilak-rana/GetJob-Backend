@@ -24,8 +24,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
-  origin: "https://getjobportfolio.netlify.app",
+  origin: "*",
   credentials: true,
+  OptionSuccessStatus: 200,
 };
 
 app.use(cors(corsOptions));
